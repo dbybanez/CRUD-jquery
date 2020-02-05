@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>List</title>
+  <meta charset="utf-8">
+  <meta name="description" content="JQuery Example">
+  <meta name="author" content="David Ybanez">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <body style="margin: 20px; height: auto">
+    <input type="text" name="fnameinput" placeholder="First Name" value="">
+    <input type="text" name="miinput" placeholder="Middle Initial" value="">
+    <input type="text" name="lnameinput" placeholder="Last Name" value="">
+    <button id="addBtn">+ Add</button>
+    <table id="tableList" border="1" style="border: 1px solid #000; margin-top: 10px; margin-bottom: 10px; width:100%;">
+      <thead>
+        <tr>
+          <th>X</th>
+          <th>ID </th>
+          <th>First Name</th>
+          <th>Middle Initial</th>
+          <th>Last Name</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="emptyMessage">
+          <td colspan="6" style="text-align: center;">Table is empty</td>
+        </tr>
+        <!-- <tr>
+          <td style="text-align:center;"><input type="checkbox" name="chkbx"></td>
+          <td>1</td>
+          <td><input type="text" name="" value="Juan"></td>
+          <td><input type="text" name="" value="D."></td>
+          <td><input type="text" name="" value="Cruz"></td>
+          <td style="text-align:center;"><button>Save</button> <button>Cancel</button></td>
+        </tr> -->
+        <!-- <tr>
+          <td style="text-align:center;"><input type="checkbox" name="chkbx"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td style="text-align:center;"><button>Edit</button></td>
+        </tr> -->
+      </tbody>
+    </table>
+    <button id="delSelected">Delete Selected</button>
+    <button id="delFirst">Delete First</button>
+    <button id="delAll">Delete All</button>
+  	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

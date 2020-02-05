@@ -1,0 +1,79 @@
+/*
+*
+		========================================
+		  9. Elements
+		========================================
+
+		  Date Created: --/--/----
+		  Created By:   David Benjamin Ybanez
+		  Last Updated: --/--/----
+		  Updated By:   David Benjamin Ybanez
+
+*
+*/
+
+/*
+*
+		========================================
+		  Calculator Display
+		========================================
+
+*
+*/
+
+.calc-disp {
+	//padding-bottom: .5rem;
+	//overflow: hidden;
+	> input {
+		line-height: 2;
+		font-size: 2.5rem;
+		width: 100%;
+		margin: 0;
+		padding: .5rem;
+		-webkit-box-sizing: border-box;
+		text-align: right;
+		vertical-align: top;
+		border: none;
+		box-shadow: 0 4px 10px -4px $gmd-grey-900;
+	}
+	> input[disabled=""] {
+		background-color: $gmd-blue;
+		color: $gmd-white;
+	}
+}
+
+.calc-btn {
+	background-color: $gmd-grey-500;
+	border: none;
+	width: 100%;
+	text-align: center;
+	display: block;
+	padding: 1rem 0rem;
+	font-size: 1.1rem;
+}
+.calc-btn:hover {
+	background-color: $gmd-grey-300;
+}
+.calc-btn.inverted {
+	color: $gmd-white;
+	background-color: rgba($gmd-grey-900,0.9);
+}
+.calc-btn.inverted:hover {
+	background-color: rgba($gmd-grey-900, 1.0);
+}
+.calc-btn.mini {
+	padding: .5rem 0rem;
+}
+
+.basic.buttons {
+	button {
+		background-color: $gmd-white;
+	}
+	button:hover {
+		@extend .calc-btn:hover;
+	}
+}
+
+.bordered {
+	border-bottom: 1px solid $gmd-grey-100;
+}

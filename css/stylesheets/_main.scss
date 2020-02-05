@@ -1,0 +1,38 @@
+/*
+*
+		========================================
+		  5. Main
+		========================================
+
+		  Date Created: --/--/----
+		  Created By:   David Benjamin Ybanez
+		  Last Updated: --/--/----
+		  Updated By:   David Benjamin Ybanez
+
+*
+*/
+
+.calc-app {
+	//margin: 1rem;
+	display: inline-block;
+	width: $width-300;
+}
+
+.calc-btns {
+	.row {
+		overflow: hidden;
+		> .item {
+			float: left;
+		}
+	}
+	.six.item.row {
+		> .item {
+			width: 16.66666666666667%;
+		}
+	}
+	.four.item.row {
+		> .item {
+			width: 25%;
+		}
+	}
+}

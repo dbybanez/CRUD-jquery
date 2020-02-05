@@ -1,0 +1,79 @@
+/*
+*
+		========================================
+		  3. Header
+		========================================
+
+		  Date Created: --/--/----
+		  Created By:   David Benjamin Ybanez
+		  Last Updated: --/--/----
+		  Updated By:   David Benjamin Ybanez
+
+*
+*/
+
+.calc-title {
+	padding: .5rem;
+	background-color: $gmd-blue;
+	overflow: hidden;
+	h2.header {
+		float:left;
+		font-size: 1.2rem;
+		margin: 0rem;
+		line-height: 1;
+		color: $gmd-white;
+		font-weight: 400;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		padding-left: 1rem;
+	}
+
+	.nav-menu {
+		float: left;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		span {
+			display: block;
+			height: 2px;
+			width: 1.5rem;
+			background-color: $gmd-white;
+			margin-bottom: 5px;
+		}
+		span:last-child {
+			margin-bottom: 0rem;
+		}
+	}
+}
+
+.calc-header {
+	position: relative;
+	display: block;
+	background-color: $gmd-grey;
+	div.list {
+		list-style-type: none;
+		display: block;
+		padding: 0rem;
+		margin: 0rem;
+		overflow: hidden;
+		> div.item {
+			float:left;
+			a {
+				padding: .5rem;
+				display: block;
+				text-decoration: none;
+				color: $gmd-white;
+				background-color: $gmd-grey;
+				line-height: 1;
+			}
+			a:hover {
+				background-color: $gmd-grey-700;
+			}
+		}
+		> div.item[class*="active"] a {
+			background-color: $gmd-grey-700;
+		}
+	}
+}
